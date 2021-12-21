@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="main.css">
+    <title>ストップウォッチ</title>
+  </head>
+
+  <body>
+    <h3>ストップウォッチ</h3>
+
+    <!-- タイム表示 -->
+    <p class="time_show" id="disply_time"> 0 : 0 : 0 : 0 </p>
+
+    <!-- ボタン表示 -->
+    <!-- 初期設定
+        btn_start:ON
+        btn_stop:OFF
+        btn_reset:OFF
+    -->
+    <div class="btn_size">
+        <button id="btn_start" type="button" onclick=click_btn_start()>スタート</button>
+        <button id="btn_stop" type="button" onclick=click_btn_stop() disabled>ストップ</button>
+        <button id="btn_reset" type="button" onclick=click_btn_reset() disabled>リセット</button>
+    </div>    
+    
+    <script src="main.js"></script>
+  </body>
+</html>
